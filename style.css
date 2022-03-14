@@ -7,7 +7,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-/* common class  */
+/*----------------------- common class --------------- */
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -33,6 +33,17 @@ body{
     top: 3px;
     box-shadow: 0 1px 0 #d32a87;
 }
+.sectin-title{
+    text-align: center;
+}
+.sectin-title h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ff008e;
+    margin: 50px 0;
+    display: inline-block;
+}
+/*--------------------- common class ----------------------------*/
 /* header style */
 header{
     background-image: url('./images/cloud.png');
@@ -88,4 +99,39 @@ nav{
 }
 .right-banner img{
     width: 100%;
+}
+/* feacheer style */
+.feacher{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-content: center;
+}
+.card{
+    width: 500px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.20);
+}
+.card .card-icon{
+    background-color: #ff008e;
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: #fff;
+}
+.card h3{
+    font-size: 25px;
+    color: #ff008e;
+}
+.card p{
+    line-height: 1.7;
+    text-align: justify;
+    letter-spacing: 1;
+    margin: 10px 0;
+}
+.card a{
+    text-decoration: none;
+    color: #ff008e;
 }
