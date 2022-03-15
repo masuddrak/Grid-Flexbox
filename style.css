@@ -10,7 +10,7 @@ body{
 /*----------------------- common class --------------- */
 .container{
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 .hilight{
     color: #ff008e;
@@ -73,8 +73,10 @@ nav{
 /* banner design */
 .banner{
     height: calc(100vh - 80px);
+    min-height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 .left-banner{
     display: flex;
@@ -151,7 +153,7 @@ nav{
 .contact{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 30px;
+    gap: 100px;
     align-items: center;
 }
 .left-contact img{
@@ -181,4 +183,31 @@ footer{
     align-items: center;
     color: #fff;
 
+}
+/* responsive tab */
+@media(max-width:950px){
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .left-banner h1{
+        font-size: 30px;
+     }
+     .card{
+        width: 300px;
+        
+    }
+}
+@media(max-width:700px){
+
+    .banner,.feacher,.gallery,.contact{
+        grid-template-columns: 1fr;
+    }
+    .left-banner {
+        order: 1;
+     }
+     .right-banner img{
+        width: 300px;
+    }
+   
+     
 }
