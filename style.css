@@ -147,3 +147,27 @@ nav{
     object-fit: cover;
     border: 2px solid #ff008e;
 }
+/* contact style */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    align-items: center;
+}
+.left-contact img{
+    width: 100%;
+}
+.right-contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    font-family: inherit;
+    outline: none;
+    border: 1px solid #8b215c;
+    border-radius: 2px;
+}
